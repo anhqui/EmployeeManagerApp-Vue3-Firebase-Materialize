@@ -24,8 +24,9 @@ const router = useRouter();
 
 const auth = getAuth();
 
-const isLoggedIn = ref(true);
-const currentUser = ref(false);
+let isLoggedIn = ref(true);
+let currentUser = ref(false);
+
 
 const logout = () =>{
 signOut(auth).then(()=>{
