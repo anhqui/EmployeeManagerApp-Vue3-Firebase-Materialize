@@ -29,8 +29,8 @@ const currentUser = ref(false);
 
 const logout = () =>{
 signOut(auth).then(()=>{
-  //  router.push('/login')
-    router.go({path: router.path})
+    router.push('/login')
+  //  router.go({path: router.path})
 
 }).catch(error =>{
   alert(error.message)
