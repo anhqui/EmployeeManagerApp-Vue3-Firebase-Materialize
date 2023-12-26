@@ -19,11 +19,15 @@
 </template>
 
 <script setup>
+import {ref} from 'vue'    
 import {onMounted, ref} from 'vue'
 import db from './firebaseInit'
 import { collection, getDocs, orderBy, query } from "firebase/firestore"; 
+  //  import { getAuth } from "firebase/auth";
 
 const employees = ref([])
+const isLoggedIn = ref(false);
+    // const auth = getAuth();
 
 onMounted(async ()=>{
     // const querySnapshot = await getDocs(collection(db, "employees"));
@@ -42,6 +46,7 @@ const data = {
 employees.value.push(data)
 
 });
+    isLoggedIn.value = true;
 })
 
 
