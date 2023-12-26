@@ -44,9 +44,9 @@ const data = {
 
 }
 employees.value.push(data)
-
+   isLoggedIn.value = true;
 });
-    isLoggedIn.value = true;
+ 
 })
 
 
