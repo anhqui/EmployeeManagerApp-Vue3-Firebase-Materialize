@@ -24,7 +24,7 @@ const router = useRouter();
 
 const auth = getAuth();
 
-let isLoggedIn = ref(false);
+let isLoggedIn = ref(true);
 let currentUser = ref(false);
 
   isLoggedIn.value = true;
