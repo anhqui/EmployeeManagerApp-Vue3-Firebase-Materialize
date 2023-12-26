@@ -23,12 +23,8 @@ import {ref} from 'vue'
 import {onMounted, ref} from 'vue'
 import db from './firebaseInit'
 import { collection, getDocs, orderBy, query } from "firebase/firestore"; 
-   // import { getAuth } from "firebase/auth";
 
 const employees = ref([])
-// const isLoggedIn = ref(false);
-//     const currentUser = ref(false);
-//      const auth = getAuth();
 
 onMounted(async ()=>{
     // const querySnapshot = await getDocs(collection(db, "employees"));
@@ -48,18 +44,7 @@ employees.value.push(data)
    
 });
 
-//         if(auth.currentUser){
-// isLoggedIn.value = true;
-// currentUser.value = auth.currentUser.email;
-// }else{
-//   isLoggedIn.value = false;
-// }
- 
 })
-
-
-
-
 
 </script>
 
