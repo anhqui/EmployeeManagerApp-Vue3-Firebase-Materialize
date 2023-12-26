@@ -44,7 +44,7 @@ const data = {
 
 }
 employees.value.push(data)
-   location.reload()
+   window.location.reload()
 });
  
 })
