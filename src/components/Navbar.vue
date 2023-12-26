@@ -42,6 +42,8 @@ signOut(auth).then(()=>{
 if(auth.currentUser){
 isLoggedIn.value = true;
 currentUser.value = auth.currentUser.email;
+}else{
+  isLoggedIn.value = false;
 }
 
 
