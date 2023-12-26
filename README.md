@@ -1,6 +1,6 @@
 # employeemanager
 
-This template should help get you started developing with Vue 3 in Vite.
+In this project, I am actively crafting an Employee Manager app that harnesses the advanced features of Vue 3, including the powerful Composition API. The application is enriched with a stylish presentation using Materialize, while Firebase takes the lead in providing secure and efficient solutions for both authentication and database management aspects.
 
 ## Recommended IDE Setup
 
