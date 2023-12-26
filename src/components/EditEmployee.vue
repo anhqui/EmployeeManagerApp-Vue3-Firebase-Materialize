@@ -59,7 +59,6 @@ const fetchData = async () =>{
 
 fetchData()
 
-
 const updateEmployee = async () =>{
      const q =  query(collection(db, "employees"), where('employee_id', '==', route.params.employee_id));
      const querySnapshot = await getDocs(q);
