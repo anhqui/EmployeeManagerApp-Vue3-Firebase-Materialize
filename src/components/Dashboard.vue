@@ -6,7 +6,7 @@
             <div class="chip">
             {{employee.dept}}
             </div> 
-            {{employee.employee_id}}:{{employee.name}}  
+            {{employee.employee_id}}: {{employee.name}}  
             <router-link :to="{name: 'view-employee', params:{employee_id: employee.employee_id}}" class="right"><i class="fa fa-eye"></i></router-link>
             </li>
        </ul>
