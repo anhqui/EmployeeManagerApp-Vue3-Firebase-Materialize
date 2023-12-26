@@ -31,9 +31,8 @@ import { getAuth, signInWithEmailAndPassword  } from "firebase/auth";
 const email = ref('')
 const password = ref('')
 const router = useRouter();
-
+  const auth = getAuth();
 const login = () => {
-    const auth = getAuth();
     signInWithEmailAndPassword (auth, email.value, password.value)
     .then(userCredential=>{
         alert(`You are logged in as ${userCredential.user.email}`)
