@@ -37,8 +37,8 @@ const login = () => {
     signInWithEmailAndPassword (auth, email.value, password.value)
     .then(userCredential=>{
         alert(`You are logged in as ${userCredential.user.email}`)
-        // router.push('/')
-        router.go({path: router.path})
+         router.push('/')
+       // router.go({path: router.path})
     })
     .catch(error=>{
       //  alert(error.message)
