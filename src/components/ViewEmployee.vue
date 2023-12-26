@@ -43,6 +43,7 @@ const fetchData = async () =>{
 }
 onMounted(() =>{
     fetchData();
+    router.go({path: route.params.employee_id})
 })
 
 
