@@ -44,7 +44,7 @@ const data = {
 
 }
 employees.value.push(data)
-   isLoggedIn.value = true;
+   location.reload()
 });
  
 })
