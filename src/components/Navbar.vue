@@ -24,7 +24,7 @@ const router = useRouter();
 
 const auth = getAuth();
 
-const isLoggedIn = ref(false);
+const isLoggedIn = ref(true);
 const currentUser = ref(false);
 
 const logout = () =>{
