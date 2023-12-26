@@ -30,6 +30,7 @@ const currentUser = ref(false);
 const logout = () =>{
 signOut(auth).then(()=>{
     router.push('/login')
+  isLoggedIn.value = false;
   //  router.go({path: router.path})
 
 }).catch(error =>{
