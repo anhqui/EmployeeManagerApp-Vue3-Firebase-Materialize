@@ -37,8 +37,8 @@ const register = () => {
     createUserWithEmailAndPassword(auth, email.value, password.value)
     .then(userCredential=>{
         alert(`Account created for ${userCredential.user.email}`)
-        // router.push('/')
-          router.go({path: router.path})
+         router.push('/')
+         // router.go({path: router.path})
     })
     .catch(error=>{
         alert(error.message)
