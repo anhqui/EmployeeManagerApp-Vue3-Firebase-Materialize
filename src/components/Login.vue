@@ -41,7 +41,8 @@ const login = () => {
         router.go({path: router.path})
     })
     .catch(error=>{
-        alert(error.message)
+      //  alert(error.message)
+         alert('Login is invalid')
     })
    
 
