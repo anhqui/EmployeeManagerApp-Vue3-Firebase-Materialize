@@ -19,7 +19,7 @@
 import db from './firebaseInit'
 import { collection, getDocs,  doc, deleteDoc, where, query } from "firebase/firestore"; 
 import {useRoute, useRouter} from 'vue-router'
-import {ref, onMounted} from 'vue'
+import {ref} from 'vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -41,11 +41,8 @@ const fetchData = async () =>{
 });
 
 }
-onMounted(() =>{
-    fetchData();
-    router.go({path: route.params.employee_id})
-})
 
+fetchData();
 
 const deleteEmployee = async () =>{
     if(confirm('Are you sure?')){
