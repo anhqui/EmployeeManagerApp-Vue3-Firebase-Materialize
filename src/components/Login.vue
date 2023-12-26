@@ -28,6 +28,7 @@ import {ref} from 'vue'
 import { useRouter} from "vue-router"
 import { getAuth, signInWithEmailAndPassword  } from "firebase/auth";
 
+const isLoggedIn = ref(false);
 const email = ref('')
 const password = ref('')
 const router = useRouter();
@@ -36,7 +37,8 @@ const login = () => {
     signInWithEmailAndPassword (auth, email.value, password.value)
     .then(userCredential=>{
         alert(`You are logged in as ${userCredential.user.email}`)
-         router.push('/')
+         router.push('/');
+        isLoggedIn.value = true;
        // router.go({path: router.path})
     
     })
