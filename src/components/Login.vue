@@ -38,6 +38,7 @@ const login = () => {
     .then(userCredential=>{
         alert(`You are logged in as ${userCredential.user.email}`)
          router.push('/')
+        location.reload()
        // router.go({path: router.path})
     })
     .catch(error=>{
