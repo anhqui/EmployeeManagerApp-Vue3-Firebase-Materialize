@@ -29,9 +29,9 @@ let currentUser = ref(false);
 
 const logout = () =>{
 signOut(auth).then(()=>{
-    router.push('/login')
-  isLoggedIn.value = false;
-  //  router.go({path: router.path})
+   // router.push('/login')
+  // isLoggedIn.value = false;
+    router.go({path: router.path})
 
 }).catch(error =>{
   alert(error.message)
@@ -42,10 +42,7 @@ signOut(auth).then(()=>{
 if(auth.currentUser){
 isLoggedIn.value = true;
 currentUser.value = auth.currentUser.email;
-}else{
-  isLoggedIn.value = false;
 }
-
 
 
 </script>
