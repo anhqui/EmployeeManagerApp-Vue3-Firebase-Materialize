@@ -11,6 +11,6 @@
 
 <script setup>
 import Navbar from './components/Navbar.vue'
-
+window.location.reload(); 
 </script>
 
