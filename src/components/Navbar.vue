@@ -39,7 +39,7 @@ signOut(auth).then(()=>{
 
 }
 
-if(auth.currentUser){
+if(auth.currentUser.email){
 isLoggedIn.value = true;
 currentUser.value = auth.currentUser.email;
 }
