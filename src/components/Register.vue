@@ -39,6 +39,7 @@ const register = () => {
         alert(`Account created for ${userCredential.user.email}`)
         // router.push('/login')
           router.go({path: router.path})
+        console.log("test")
     })
     .catch(error=>{
         alert(error.message)
