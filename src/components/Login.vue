@@ -45,7 +45,7 @@ const login = () => {
       //  alert(error.message)
          alert('Login is invalid')
     })
-    window.location.reload(); 
+   
 
 }
 
